@@ -1,20 +1,18 @@
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
 import {Script} from "forge-std/Script.sol";
-import {console2} from "forge-std/console2.sol";
+import {ReceiptsMeshRegistry} from "src/ReceiptsMeshRegistry.sol";
 
-import { ReceiptsMeshRegistry } from "src/ReceiptsMeshRegistry.sol";
-
-contract Deploy is Script {
+contract DeployScript is Script {
     function run() external returns (ReceiptsMeshRegistry deployed) {
         address admin = vm.envAddress("ADMIN_WALLET_ADDRESS");
         address operator = vm.envAddress("OPERATOR_WALLET_ADDRESS");
-
+        address reporter = vm.envAddress("REPORTER_WALLET_ADDRESS");
+        uint256 principalFloor = vm.envUint("INITIAL_PRINCIPAL_FLOOR");
         vm.startBroadcast();
-        deployed = new ReceiptsMeshRegistry(admin, operator);
+        deployed = new ReceiptsMeshRegistry(admin, operator, reporter, principalFloor);
         vm.stopBroadcast();
-
-        console2.log("Deployed ReceiptsMeshRegistry at", address(deployed));
     }
 }

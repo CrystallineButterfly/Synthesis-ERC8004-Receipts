@@ -1,9 +1,13 @@
+
 [project]
 name = "synthesis_erc8004_receipts"
 version = "0.1.0"
 description = "A receipts-native identity and reputation rail for swarms that hire each other, settle work, and publish onchain usage evidence."
 readme = "README.md"
 requires-python = ">=3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
