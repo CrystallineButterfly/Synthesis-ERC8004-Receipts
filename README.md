@@ -1,15 +1,25 @@
 # ReceiptsMesh Reputation Market
 
-- **Repo:** `Synthesis-ERC8004-Receipts`
+- **Repo:** [Synthesis-ERC8004-Receipts](https://github.com/CrystallineButterfly/Synthesis-ERC8004-Receipts)
 - **Primary track:** Agents With Receipts
 - **Category:** identity
+- **Primary contract:** `ReceiptsMeshRegistry`
+- **Primary module:** `receipts_mesh`
 - **Submission status:** implementation ready, waiting for credentials and TxIDs.
+
+## What this repo does
 
 A receipts-native identity and reputation rail for swarms that hire each other, settle work, and publish onchain usage evidence.
 
-## Selected concept
+## Why this build matters
 
 A receipt registry models identity anchors, operator wallets, reputation updates, and task receipts with machine-readable metadata. Python tooling assembles receipt payloads, verifies schemas, and keeps agent.json and agent_log.json aligned with future live registrations.
+
+## Submission fit
+
+- **Primary track:** Agents With Receipts
+- **Overlap targets:** Olas, PayWithLocus, ENS, Bond.credit, OpenServ, Bankr Gateway
+- **Partners covered:** ERC-8004 Receipts, Olas, PayWithLocus, ENS, Bond.credit, OpenServ, Bankr Gateway
 
 ## Idea shortlist
 
@@ -17,11 +27,7 @@ A receipt registry models identity anchors, operator wallets, reputation updates
 2. Credit-Scored Trading Agent
 3. ENS-Only Reputation Exchange
 
-## Partners covered
-
-ERC-8004 Receipts, Olas, PayWithLocus, ENS, Bond.credit, OpenServ, Bankr Gateway
-
-## Architecture
+## System graph
 
 ```mermaid
 flowchart TD
@@ -39,14 +45,36 @@ flowchart TD
     Contract --> openserv[OpenServ]
 ```
 
-## Repository layout
+## Repository contents
 
-- `src/`: shared policy contracts plus the repo-specific wrapper contract.
-- `script/`: Foundry deployment entrypoint.
-- `agents/`: Python runtime, partner adapters, and project metadata.
-- `scripts/`: CLI utilities for running the loop and rendering submissions.
-- `docs/`: architecture, credentials, demo script, and security notes.
-- `submissions/`: generated `synthesis.md` snippet for this repo.
+| Path | What it contains |
+| --- | --- |
+| `src/` | Shared policy contracts plus the repo-specific wrapper contract. |
+| `script/Deploy.s.sol` | Foundry deployment entrypoint for the policy contract. |
+| `agents/` | Python runtime, project spec, env handling, and partner adapters. |
+| `scripts/` | Terminal entrypoints for run, demo planning, and submission rendering. |
+| `docs/` | Architecture, credentials, security notes, and demo steps. |
+| `submissions/` | Generated `synthesis.md` snippet for this repo. |
+| `test/` | Foundry tests for the Solidity control layer. |
+| `tests/` | Python tests for runtime and project context. |
+| `agent.json` | Submission-facing agent manifest. |
+| `agent_log.json` | Local execution log and status trail. |
+
+## Autonomy loop
+
+1. Discover signals relevant to the repo track and its overlap targets.
+2. Build a bounded plan with per-action and compute caps.
+3. Persist a dry-run artifact before any live execution.
+4. Enforce onchain policy through the guarded contract wrapper.
+5. Verify outputs, update receipts, and render submission material.
+
+## Security controls
+
+- Admin-managed allowlists for targets and selectors.
+- Per-action caps, daily caps, cooldown windows, and a principal floor.
+- Reporter-only receipt anchoring and proof attachment.
+- Env-only secrets; no committed private keys or partner tokens.
+- Pause switch plus dry-run-first execution flow.
 
 ## Action catalog
 
@@ -59,6 +87,18 @@ flowchart TD
 | `bond_credit_credit_trade` | Bond.credit | Use Bond.credit for a bounded action in this repo. | $90 | high |
 | `openserv_job_dispatch` | OpenServ | Use OpenServ for a bounded action in this repo. | $10 | medium |
 | `bankr_gateway_compute_route` | Bankr Gateway | Use Bankr Gateway for a bounded action in this repo. | $10 | high |
+
+## Local terminal flow (Anvil + Sepolia)
+
+```bash
+export SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_KEY
+anvil --fork-url "$SEPOLIA_RPC_URL" --chain-id 11155111
+cp .env.example .env
+# keep private keys only in .env; TODO.md stays local-only too
+forge script script/Deploy.s.sol --rpc-url "$RPC_URL" --broadcast
+python3 scripts/run_agent.py
+python3 scripts/render_submission.py
+```
 
 ## Commands
 
