@@ -1,6 +1,6 @@
 # ReceiptsMesh Reputation Market
 
-- **Repo:** https://github.com/CrystallineButterfly/Synthesis-ERC8004-Receipts
+- **Repo:** TODO_GITHUB_URL/Synthesis-ERC8004-Receipts
 - **Primary track:** Agents With Receipts
 - **Overlap targets:** Olas, PayWithLocus, ENS, Bond.credit, OpenServ, Bankr Gateway
 - **Primary contract:** ReceiptsMeshRegistry
@@ -18,10 +18,10 @@ A receipts-native identity and reputation rail for swarms that hire each other, 
   "status": "verified",
   "project_name": "ReceiptsMesh Reputation Market",
   "track": "Agents With Receipts",
-  "plan_id": "0x79206b1cf8e65bc128d493fffaf9f683674b3f2223e5f95be8d99483d329a300",
-  "simulation_hash": "0xeb26225d1565db9466098e64ffaf98ca835d163b23bc7f9a1b2c8dbbaa4685ed",
+  "plan_id": "0xbd8615e7f7640f92522aac3a9b6d72e02f01690640d900d85cbcfc96ff6fa1db",
+  "simulation_hash": "0xce257fc0eb861ed6f78b0da78431ac68fba1f7a1ed11fd06f02a3c2508a509bd",
   "execution_status": "awaiting_credentials",
   "tx_ids": [],
-  "created_at": "2026-03-18T21:43:58+00:00"
+  "created_at": "2026-03-18T23:01:12+00:00"
 }
 ```
