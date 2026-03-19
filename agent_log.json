@@ -7,5 +7,589 @@
     "details": {
       "status": "ready_for_credentials"
     }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "discover",
+    "actor": "agent_runtime",
+    "message": "Ranked local signals.",
+    "details": {
+      "signals": [
+        {
+          "name": "identity_state",
+          "description": "Names, wallets, manifests, and verification proofs.",
+          "score": 95
+        },
+        {
+          "name": "permissions",
+          "description": "Which principals can act on which rails.",
+          "score": 90
+        },
+        {
+          "name": "reputation_events",
+          "description": "Receipts, scores, and attestation updates.",
+          "score": 85
+        },
+        {
+          "name": "receipts",
+          "description": "Submission notes and public evidence links.",
+          "score": 80
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "plan",
+    "actor": "agent_runtime",
+    "message": "Built bounded plan.",
+    "details": {
+      "plan_id": "0xb28415a2b5288de00d3945c8af7aad2298840c2eb1c15e394f7b6d4c26a3cdfb"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "dry_run",
+    "actor": "agent_runtime",
+    "message": "Prepared partner previews.",
+    "details": {
+      "simulation_hash": "0x0f65c99be17d05516f1151162cb00c87357c9f6db0078ad506854d22c9188491"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "execute",
+    "actor": "agent_runtime",
+    "message": "Skipped live execution.",
+    "details": {
+      "missing_env": [
+        "BANKR_API_KEY",
+        "BANKR_CHAT_COMPLETIONS_URL",
+        "BANKR_MODEL",
+        "BOND_CREDIT_PROFILE_URL",
+        "ENS_NAME",
+        "GMX_ORDER_URL",
+        "LOCUS_API_KEY",
+        "LOCUS_PAYMENT_URL",
+        "OLAS_API_KEY",
+        "OLAS_REQUEST_URL",
+        "OPENSERV_AGENT_URL",
+        "OPENSERV_API_KEY",
+        "RPC_URL"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "verify",
+    "actor": "agent_runtime",
+    "message": "Wrote verification.",
+    "details": {
+      "status": "verified",
+      "project_name": "ReceiptsMesh Reputation Market",
+      "track": "Agents With Receipts",
+      "plan_id": "0xb28415a2b5288de00d3945c8af7aad2298840c2eb1c15e394f7b6d4c26a3cdfb",
+      "simulation_hash": "0x0f65c99be17d05516f1151162cb00c87357c9f6db0078ad506854d22c9188491",
+      "execution_status": "awaiting_credentials",
+      "tx_ids": [],
+      "created_at": "2026-03-19T03:30:06+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "discover",
+    "actor": "agent_runtime",
+    "message": "Ranked local signals.",
+    "details": {
+      "signals": [
+        {
+          "name": "identity_state",
+          "description": "Names, wallets, manifests, and verification proofs.",
+          "score": 95
+        },
+        {
+          "name": "permissions",
+          "description": "Which principals can act on which rails.",
+          "score": 90
+        },
+        {
+          "name": "reputation_events",
+          "description": "Receipts, scores, and attestation updates.",
+          "score": 85
+        },
+        {
+          "name": "receipts",
+          "description": "Submission notes and public evidence links.",
+          "score": 80
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "plan",
+    "actor": "agent_runtime",
+    "message": "Built bounded plan.",
+    "details": {
+      "plan_id": "0xb28415a2b5288de00d3945c8af7aad2298840c2eb1c15e394f7b6d4c26a3cdfb"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "dry_run",
+    "actor": "agent_runtime",
+    "message": "Prepared partner previews.",
+    "details": {
+      "simulation_hash": "0x0f65c99be17d05516f1151162cb00c87357c9f6db0078ad506854d22c9188491"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "execute",
+    "actor": "agent_runtime",
+    "message": "Skipped live execution.",
+    "details": {
+      "missing_env": [
+        "BANKR_API_KEY",
+        "BANKR_CHAT_COMPLETIONS_URL",
+        "BANKR_MODEL",
+        "BOND_CREDIT_PROFILE_URL",
+        "ENS_NAME",
+        "GMX_ORDER_URL",
+        "LOCUS_API_KEY",
+        "LOCUS_PAYMENT_URL",
+        "OLAS_API_KEY",
+        "OLAS_REQUEST_URL",
+        "OPENSERV_AGENT_URL",
+        "OPENSERV_API_KEY",
+        "RPC_URL"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:30:06+00:00",
+    "stage": "verify",
+    "actor": "agent_runtime",
+    "message": "Wrote verification.",
+    "details": {
+      "status": "verified",
+      "project_name": "ReceiptsMesh Reputation Market",
+      "track": "Agents With Receipts",
+      "plan_id": "0xb28415a2b5288de00d3945c8af7aad2298840c2eb1c15e394f7b6d4c26a3cdfb",
+      "simulation_hash": "0x0f65c99be17d05516f1151162cb00c87357c9f6db0078ad506854d22c9188491",
+      "execution_status": "awaiting_credentials",
+      "tx_ids": [],
+      "created_at": "2026-03-19T03:30:06+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:39:23.678178+00:00",
+    "stage": "security_review",
+    "actor": "audit_pass",
+    "message": "Completed the shared hardening and offline-artifact audit pass.",
+    "details": {
+      "status": "audited_ready_pending_live_credentials",
+      "primary_contract": "ReceiptsMeshRegistry.sol"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:48:49+00:00",
+    "stage": "discover",
+    "actor": "agent_runtime",
+    "message": "Ranked local signals.",
+    "details": {
+      "signals": [
+        {
+          "name": "identity_state",
+          "description": "Names, wallets, manifests, and verification proofs.",
+          "score": 95
+        },
+        {
+          "name": "permissions",
+          "description": "Which principals can act on which rails.",
+          "score": 90
+        },
+        {
+          "name": "reputation_events",
+          "description": "Receipts, scores, and attestation updates.",
+          "score": 85
+        },
+        {
+          "name": "receipts",
+          "description": "Submission notes and public evidence links.",
+          "score": 80
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:48:49+00:00",
+    "stage": "plan",
+    "actor": "agent_runtime",
+    "message": "Built bounded plan for every repo action.",
+    "details": {
+      "plan_id": "0xf47df50929e525a1d3d8adfdd07fc2f351f1036844c66d4b00d391a01713e307",
+      "action_count": 7
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:48:49+00:00",
+    "stage": "dry_run",
+    "actor": "agent_runtime",
+    "message": "Prepared partner previews.",
+    "details": {
+      "simulation_hash": "0x19314e809659682b5338eac04c152972d2f5ac2a3c82da3b301565ba19b69c95"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:48:49+00:00",
+    "stage": "execute",
+    "actor": "agent_runtime",
+    "message": "Prepared offline artifacts and skipped network execution.",
+    "details": {
+      "missing_env": [
+        "BANKR_API_KEY",
+        "BANKR_CHAT_COMPLETIONS_URL",
+        "BANKR_MODEL",
+        "BOND_CREDIT_PROFILE_URL",
+        "GMX_ORDER_URL",
+        "LOCUS_API_KEY",
+        "LOCUS_PAYMENT_URL",
+        "OLAS_API_KEY",
+        "OLAS_REQUEST_URL",
+        "OPENSERV_AGENT_URL",
+        "OPENSERV_API_KEY"
+      ],
+      "artifact_count": 2
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:48:49+00:00",
+    "stage": "verify",
+    "actor": "agent_runtime",
+    "message": "Wrote verification.",
+    "details": {
+      "status": "verified",
+      "project_name": "ReceiptsMesh Reputation Market",
+      "track": "Agents With Receipts",
+      "plan_id": "0xf47df50929e525a1d3d8adfdd07fc2f351f1036844c66d4b00d391a01713e307",
+      "simulation_hash": "0x19314e809659682b5338eac04c152972d2f5ac2a3c82da3b301565ba19b69c95",
+      "execution_status": "offline_prepared",
+      "tx_ids": [],
+      "artifact_paths": [
+        "artifacts/onchain_intents/erc_8004_receipts_receipt_anchor.json",
+        "artifacts/onchain_intents/ens_ens_publish.json"
+      ],
+      "partner_statuses": {
+        "ERC-8004 Receipts": "prepared_contract_call",
+        "Olas": "awaiting_credentials",
+        "PayWithLocus": "awaiting_credentials",
+        "ENS": "prepared_contract_call",
+        "Bond.credit": "awaiting_credentials",
+        "OpenServ": "awaiting_credentials",
+        "Bankr Gateway": "awaiting_credentials"
+      },
+      "created_at": "2026-03-19T03:48:49+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:50:41+00:00",
+    "stage": "discover",
+    "actor": "agent_runtime",
+    "message": "Ranked local signals.",
+    "details": {
+      "signals": [
+        {
+          "name": "identity_state",
+          "description": "Names, wallets, manifests, and verification proofs.",
+          "score": 95
+        },
+        {
+          "name": "permissions",
+          "description": "Which principals can act on which rails.",
+          "score": 90
+        },
+        {
+          "name": "reputation_events",
+          "description": "Receipts, scores, and attestation updates.",
+          "score": 85
+        },
+        {
+          "name": "receipts",
+          "description": "Submission notes and public evidence links.",
+          "score": 80
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:50:41+00:00",
+    "stage": "plan",
+    "actor": "agent_runtime",
+    "message": "Built bounded plan for every repo action.",
+    "details": {
+      "plan_id": "0x407cf9912d92f9e12407a0c9cabc5b101ae1ae13a930d22b978630a147327cfc",
+      "action_count": 7
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:50:41+00:00",
+    "stage": "dry_run",
+    "actor": "agent_runtime",
+    "message": "Prepared partner previews.",
+    "details": {
+      "simulation_hash": "0x57d67be63f8f4184d76871b4ffde3b6f871ea0ba319b6af44de3306266d98dfb"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:50:41+00:00",
+    "stage": "execute",
+    "actor": "agent_runtime",
+    "message": "Prepared offline artifacts and skipped network execution.",
+    "details": {
+      "missing_env": [
+        "BANKR_API_KEY",
+        "BANKR_CHAT_COMPLETIONS_URL",
+        "BANKR_MODEL",
+        "BOND_CREDIT_PROFILE_URL",
+        "GMX_ORDER_URL",
+        "LOCUS_API_KEY",
+        "LOCUS_PAYMENT_URL",
+        "OLAS_API_KEY",
+        "OLAS_REQUEST_URL",
+        "OPENSERV_AGENT_URL",
+        "OPENSERV_API_KEY"
+      ],
+      "artifact_count": 2
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:50:41+00:00",
+    "stage": "verify",
+    "actor": "agent_runtime",
+    "message": "Wrote verification.",
+    "details": {
+      "status": "verified",
+      "project_name": "ReceiptsMesh Reputation Market",
+      "track": "Agents With Receipts",
+      "plan_id": "0x407cf9912d92f9e12407a0c9cabc5b101ae1ae13a930d22b978630a147327cfc",
+      "simulation_hash": "0x57d67be63f8f4184d76871b4ffde3b6f871ea0ba319b6af44de3306266d98dfb",
+      "execution_status": "offline_prepared",
+      "tx_ids": [],
+      "artifact_paths": [
+        "artifacts/onchain_intents/erc_8004_receipts_receipt_anchor.json",
+        "artifacts/onchain_intents/ens_ens_publish.json"
+      ],
+      "partner_statuses": {
+        "ERC-8004 Receipts": "prepared_contract_call",
+        "Olas": "awaiting_credentials",
+        "PayWithLocus": "awaiting_credentials",
+        "ENS": "prepared_contract_call",
+        "Bond.credit": "awaiting_credentials",
+        "OpenServ": "awaiting_credentials",
+        "Bankr Gateway": "awaiting_credentials"
+      },
+      "created_at": "2026-03-19T03:50:41+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:51:47+00:00",
+    "stage": "discover",
+    "actor": "agent_runtime",
+    "message": "Ranked local signals.",
+    "details": {
+      "signals": [
+        {
+          "name": "identity_state",
+          "description": "Names, wallets, manifests, and verification proofs.",
+          "score": 95
+        },
+        {
+          "name": "permissions",
+          "description": "Which principals can act on which rails.",
+          "score": 90
+        },
+        {
+          "name": "reputation_events",
+          "description": "Receipts, scores, and attestation updates.",
+          "score": 85
+        },
+        {
+          "name": "receipts",
+          "description": "Submission notes and public evidence links.",
+          "score": 80
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:51:47+00:00",
+    "stage": "plan",
+    "actor": "agent_runtime",
+    "message": "Built bounded plan for every repo action.",
+    "details": {
+      "plan_id": "0x42d15aaa314d73e10d5a0f6cb783c5cec8d7825dd7aa5b60611111d2222123b5",
+      "action_count": 7
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:51:47+00:00",
+    "stage": "dry_run",
+    "actor": "agent_runtime",
+    "message": "Prepared partner previews.",
+    "details": {
+      "simulation_hash": "0x4451cebd5633e666a9bb8c314cd329c40ebd4f24d0d75299efdb2fab555ba428"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:51:47+00:00",
+    "stage": "execute",
+    "actor": "agent_runtime",
+    "message": "Prepared offline artifacts and skipped network execution.",
+    "details": {
+      "missing_env": [
+        "BANKR_API_KEY",
+        "BANKR_CHAT_COMPLETIONS_URL",
+        "BANKR_MODEL",
+        "BOND_CREDIT_PROFILE_URL",
+        "GMX_ORDER_URL",
+        "LOCUS_API_KEY",
+        "LOCUS_PAYMENT_URL",
+        "OLAS_API_KEY",
+        "OLAS_REQUEST_URL",
+        "OPENSERV_AGENT_URL",
+        "OPENSERV_API_KEY"
+      ],
+      "artifact_count": 2
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:51:47+00:00",
+    "stage": "verify",
+    "actor": "agent_runtime",
+    "message": "Wrote verification.",
+    "details": {
+      "status": "verified",
+      "project_name": "ReceiptsMesh Reputation Market",
+      "track": "Agents With Receipts",
+      "plan_id": "0x42d15aaa314d73e10d5a0f6cb783c5cec8d7825dd7aa5b60611111d2222123b5",
+      "simulation_hash": "0x4451cebd5633e666a9bb8c314cd329c40ebd4f24d0d75299efdb2fab555ba428",
+      "execution_status": "offline_prepared",
+      "tx_ids": [],
+      "artifact_paths": [
+        "artifacts/onchain_intents/erc_8004_receipts_receipt_anchor.json",
+        "artifacts/onchain_intents/ens_ens_publish.json"
+      ],
+      "partner_statuses": {
+        "ERC-8004 Receipts": "prepared_contract_call",
+        "Olas": "awaiting_credentials",
+        "PayWithLocus": "awaiting_credentials",
+        "ENS": "prepared_contract_call",
+        "Bond.credit": "awaiting_credentials",
+        "OpenServ": "awaiting_credentials",
+        "Bankr Gateway": "awaiting_credentials"
+      },
+      "created_at": "2026-03-19T03:51:47+00:00"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:52:11+00:00",
+    "stage": "discover",
+    "actor": "agent_runtime",
+    "message": "Ranked local signals.",
+    "details": {
+      "signals": [
+        {
+          "name": "identity_state",
+          "description": "Names, wallets, manifests, and verification proofs.",
+          "score": 95
+        },
+        {
+          "name": "permissions",
+          "description": "Which principals can act on which rails.",
+          "score": 90
+        },
+        {
+          "name": "reputation_events",
+          "description": "Receipts, scores, and attestation updates.",
+          "score": 85
+        },
+        {
+          "name": "receipts",
+          "description": "Submission notes and public evidence links.",
+          "score": 80
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:52:11+00:00",
+    "stage": "plan",
+    "actor": "agent_runtime",
+    "message": "Built bounded plan for every repo action.",
+    "details": {
+      "plan_id": "0xdf3ae8adc4ce47de943fc50113be2dfdc6855b47944dbd605d40e51bb08aebb3",
+      "action_count": 7
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:52:11+00:00",
+    "stage": "dry_run",
+    "actor": "agent_runtime",
+    "message": "Prepared partner previews.",
+    "details": {
+      "simulation_hash": "0x8c0377c5edd5cd4a3617552d52058fbf8e23de237ee89232a8b522b00a1a66e5"
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:52:11+00:00",
+    "stage": "execute",
+    "actor": "agent_runtime",
+    "message": "Prepared offline artifacts and skipped network execution.",
+    "details": {
+      "missing_env": [
+        "BANKR_API_KEY",
+        "BANKR_CHAT_COMPLETIONS_URL",
+        "BANKR_MODEL",
+        "BOND_CREDIT_PROFILE_URL",
+        "GMX_ORDER_URL",
+        "LOCUS_API_KEY",
+        "LOCUS_PAYMENT_URL",
+        "OLAS_API_KEY",
+        "OLAS_REQUEST_URL",
+        "OPENSERV_AGENT_URL",
+        "OPENSERV_API_KEY"
+      ],
+      "artifact_count": 2
+    }
+  },
+  {
+    "timestamp": "2026-03-19T03:52:11+00:00",
+    "stage": "verify",
+    "actor": "agent_runtime",
+    "message": "Wrote verification.",
+    "details": {
+      "status": "verified",
+      "project_name": "ReceiptsMesh Reputation Market",
+      "track": "Agents With Receipts",
+      "plan_id": "0xdf3ae8adc4ce47de943fc50113be2dfdc6855b47944dbd605d40e51bb08aebb3",
+      "simulation_hash": "0x8c0377c5edd5cd4a3617552d52058fbf8e23de237ee89232a8b522b00a1a66e5",
+      "execution_status": "offline_prepared",
+      "tx_ids": [],
+      "artifact_paths": [
+        "artifacts/onchain_intents/erc_8004_receipts_receipt_anchor.json",
+        "artifacts/onchain_intents/ens_ens_publish.json"
+      ],
+      "partner_statuses": {
+        "ERC-8004 Receipts": "prepared_contract_call",
+        "Olas": "awaiting_credentials",
+        "PayWithLocus": "awaiting_credentials",
+        "ENS": "prepared_contract_call",
+        "Bond.credit": "awaiting_credentials",
+        "OpenServ": "awaiting_credentials",
+        "Bankr Gateway": "awaiting_credentials"
+      },
+      "created_at": "2026-03-19T03:52:11+00:00"
+    }
   }
 ]
