@@ -43,6 +43,14 @@ when live network credentials are absent. Network-only partners still report mis
 `cast send` output is now parsed for `transactionHash` explicitly before falling back to the
 raw stdout payload.
 
+## Track-specific trust boundaries
+
+- primary wrapper contract: `ReceiptsMeshRegistry`
+- live-only partners: Olas, PayWithLocus, Bond.credit, OpenServ, Bankr Gateway
+- offline-prepared partners: ERC-8004 Receipts (prepared_contract_call), ENS (prepared_contract_call)
+- highest-sensitivity actions: bond_credit_credit_trade, bankr_gateway_compute_route
+- latest verification artifact: `artifacts/verification/0xdf3ae8adc4ce47de943fc50113be2dfdc6855b47944dbd605d40e51bb08aebb3.json`
+
 ## Current posture
 
 ### Good
